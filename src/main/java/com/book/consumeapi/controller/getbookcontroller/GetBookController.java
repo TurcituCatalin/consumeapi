@@ -19,7 +19,7 @@ import java.util.Optional;
         description = "Consumer API for book")
 public interface GetBookController {
 
-    @ApiOperation(value = "Get book", nickname = "getBook")
+    @ApiOperation(value = "Get book", nickname = "rest-getBook")
     @ApiResponses(value = {@ApiResponse(code = HttpServletResponse.SC_OK,
             message = "Result matching criteria",
             response = GetBookResponse.class),

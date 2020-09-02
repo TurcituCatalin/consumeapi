@@ -37,8 +37,8 @@ public class GetBookControllerImpl implements GetBookController{
     @Override
     public ResponseEntity<?> getBookSummary(Optional<Integer> bookId) {
 
-        log.info("Called /getBook");
-        log.debug("Called /getBook witch bookId = " + bookId);
+        log.info("Called /rest-getBook");
+        log.debug("Called /rest-getBook witch bookId = " + bookId);
 
         if (bookId.isPresent()) {
             log.info("BookId is present");
